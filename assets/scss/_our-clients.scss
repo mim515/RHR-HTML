@@ -1,0 +1,113 @@
+.client-area {
+  padding-top: 230px;
+  .client-menu {
+    a {
+      text-decoration: none;
+      font-family: $gestaR;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.05em;
+      text-transform: capitalize;
+      color: rgba(0, 0, 0, 0.4);
+    }
+    span {
+      margin: 0 5px;
+    }
+    .current {
+      color: $black;
+    }
+  }
+  .client-area-heading {
+    margin-top: 60px;
+    h2 {
+      font-family: $gestaR;
+      font-size: 66px;
+      text-transform: capitalize;
+      color: $black;
+    }
+    p {
+      font-family: $gestaR;
+      font-size: 20px;
+      letter-spacing: 0.02em;
+      color: $black;
+      opacity: 0.5;
+      margin-bottom: 30px;
+    }
+    a {
+      text-decoration: none;
+    }
+    .see-more {
+      font-family: $gestaL;
+      color: $black;
+      text-transform: uppercase;
+      font-size: 23px;
+      letter-spacing: 2px;
+      .arrow-right {
+        margin: 0 0 6px 12px;
+      }
+    }
+  }
+}
+.page_menu {
+  padding-top: 740px;
+}
+.client-overview-area {
+  padding-bottom: 195px;
+  overflow: hidden;
+  margin-top: 90px;
+  background: url(../img/client/client-background.png) no-repeat scroll center 0 /
+    cover;
+
+  p {
+    max-width: 850px;
+    font-family: $gestaL;
+    margin-top: 156px;
+    letter-spacing: 0.02em;
+    font-size: 36px;
+    color: #fff;
+    line-height: 140%;
+    margin-left: auto;
+  }
+}
+.client-clients-area {
+  .client-clients-area-details {
+    margin-left: auto;
+    margin-top: 107px;
+    margin-bottom: 270px;
+    h4 {
+      font-family: $gestaR;
+      font-size: 26px;
+      color: $black;
+      text-transform: capitalize;
+      letter-spacing: 0.02em;
+      position: absolute;
+    }
+    p {
+      font-family: $gestaR;
+      font-size: 20px;
+      color: $black;
+      letter-spacing: 0.02em;
+      opacity: 0.5;
+      max-width: 575px;
+      margin-left: auto;
+    }
+    .client-logo-area {
+      margin-top: 100px;
+      ul {
+        grid-template-columns: repeat(4, 1fr);
+        display: grid;
+        grid-column-gap: 35px;
+        grid-row-gap: 30px;
+
+        li {
+          &:hover img {
+            transform: scale(1.08);
+          }
+        }
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,229 @@
+.client-story {
+  padding-top: 230px;
+  .page_menu {
+    .scroll_menu {
+      z-index: 0;
+      max-width: 146px;
+      position: fixed;
+      .scrollbar {
+        width: 1px;
+        background: rgba(0, 0, 0, 0.05);
+        height: 100%;
+        position: absolute;
+        right: 0;
+      }
+
+      a {
+        text-decoration: none;
+        font-family: $gestaL;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        opacity: 0.3;
+        color: $black;
+        margin-bottom: 18px;
+        position: relative;
+        display: block;
+        &:before {
+          content: "";
+          background: url(../img/client/menu_arrow.png) no-repeat scroll center;
+          position: absolute;
+          width: 23px;
+          height: 23px;
+          position: absolute;
+          left: -40px;
+          top: -7px;
+          opacity: 0;
+          transition: all 0.2s;
+        }
+        &:hover {
+          opacity: 1;
+          &:before {
+            opacity: 1;
+            transform: translateX(5px);
+          }
+        }
+      }
+      .current {
+        opacity: 1;
+        &:before {
+          opacity: 1;
+          transform: translateX(5px);
+        }
+      }
+    }
+  }
+}
+.client-work {
+  .title {
+    max-width: 865px;
+    margin-left: auto;
+    position: relative;
+    h2 {
+      font-family: $gestaR;
+      font-size: 60px;
+      color: $black;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+    }
+    h5 {
+      font-family: $gestaR;
+      font-size: 26px;
+      letter-spacing: 0.02em;
+      color: $black;
+    }
+  }
+}
+.our-client-bg {
+  .client-bg {
+    margin-top: 78px;
+    z-index: 1;
+    position: relative;
+    img {
+      width: 100%;
+    }
+  }
+  .client-work-details {
+    margin: 102px 0 210px 340px;
+    h2 {
+      position: absolute;
+      font-family: $gestaR;
+      font-size: 26px;
+      letter-spacing: 0.02em;
+      color: $black;
+      text-transform: capitalize;
+    }
+    .para {
+      max-width: 575px;
+      margin-left: auto;
+      p {
+        font-family: $gestaR;
+        font-size: 20px;
+        color: $black;
+        opacity: 0.5;
+      }
+      .seeall {
+        margin-bottom: 70px;
+        text-decoration: none;
+        font-family: "Gesta-light";
+        color: #000;
+        text-transform: uppercase;
+        font-size: 23px;
+        letter-spacing: 2px;
+        .arrow-right {
+          margin: 0 0 6px 12px;
+        }
+      }
+    }
+    .client-logo {
+      ul {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-column-gap: 18px;
+        grid-row-gap: 15px;
+        li {
+          a {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .see-btn {
+        text-decoration: none;
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+        font-family: $gestaB;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $black;
+        margin-bottom: 140px;
+      }
+    }
+  }
+}
+.last-stories {
+  position: relative;
+
+  .last {
+    margin-left: 340px;
+    h2 {
+      font-family: $gestaR;
+      font-size: 26px;
+      letter-spacing: 0.02em;
+      color: $black;
+      text-transform: capitalize;
+    }
+
+    .para {
+      max-width: 575px;
+      margin-left: auto;
+      p {
+        font-family: $gestaR;
+        font-size: 20px;
+        color: $black;
+        opacity: 0.5;
+      }
+      .seeall {
+        margin-bottom: 70px;
+        text-decoration: none;
+        font-family: "Gesta-light";
+        color: #000;
+        text-transform: uppercase;
+        font-size: 23px;
+        letter-spacing: 2px;
+        .arrow-right {
+          margin: 0 0 6px 12px;
+        }
+      }
+    }
+  }
+  .client-logo-box {
+    margin-left: 340px;
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 35px;
+      row-gap: 80px;
+      li {
+        overflow: hidden;
+        img {
+          @include transition;
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+        h4 {
+          margin: 20px 0 5px 0;
+          font-family: $gestaM;
+          font-size: 16px;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          color: $baseColor;
+        }
+        p {
+          font-family: $gestaR;
+          font-size: 26px;
+          letter-spacing: 0.02em;
+          color: $black;
+          max-width: 418px;
+        }
+      }
+    }
+    .see-btn {
+      text-decoration: none;
+      margin-top: 20px;
+      display: block;
+      text-align: center;
+      font-family: $gestaB;
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: $black;
+      margin-bottom: 140px;
+    }
+  }
+}

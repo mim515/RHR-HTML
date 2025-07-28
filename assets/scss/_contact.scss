@@ -1,0 +1,221 @@
+/*======== contact area css ========*/
+.contact_area {
+  padding-bottom: 100px;
+  .about_title_head {
+    margin-right: -45px;
+    margin-bottom: 50px;
+  }
+  .about_discription {
+    margin-right: 40px;
+    max-width: 100%;
+    flex: 1;
+  }
+}
+
+.contact_form {
+  padding-top: 70px;
+  .form-group {
+    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-top: 30px;
+    }
+  }
+  .form-control {
+    border: 0px;
+    background: rgba(249, 249, 249, 0.5);
+    border-bottom: 1px solid $black;
+    height: 46px;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 28px;
+    border-radius: 0px;
+    color: $black;
+    box-shadow: none;
+    @include placeholder {
+      color: rgba(0, 0, 0, 0.5);
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  textarea {
+    &.form-control {
+      height: 150px;
+      padding-top: 8px;
+    }
+  }
+  .theme_btn {
+    border: 0px;
+    box-shadow: none;
+    background: transparent;
+    padding: 0px;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+/*======== contact area css ========*/
+
+/*======== Start contact address area css ========*/
+.contact_address_area {
+  padding: 100px 0px;
+}
+
+.address_list_info {
+  .address_list {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 40px 0px;
+    &:first-child {
+      padding-top: 0;
+      border-top: 0px;
+    }
+    .country_name,
+    p {
+      opacity: 0.5;
+      transition: opacity 0.2s;
+    }
+    .media-body,
+    .media-left {
+      flex: 0 0 50%;
+    }
+    .country_name {
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      a {
+        color: $black;
+        display: block;
+        &:hover {
+          color: $baseColor;
+        }
+      }
+    }
+    &:hover {
+      .country_name,
+      p {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.location_map_area {
+  overflow: hidden;
+  padding: 50px 0px;
+  .section_title {
+    margin-bottom: 10px;
+  }
+}
+
+.country_tab {
+  border-bottom: 0px;
+  .nav-item {
+    margin-bottom: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    .nav-link {
+      padding: 0px;
+      border: 0px;
+      border-radius: 0px;
+      font-size: 18px;
+      line-height: 28px;
+      display: block;
+      color: rgba(0, 0, 0, 0.5);
+      padding: 15px 0px;
+      position: relative;
+      &:before {
+        content: "";
+        background: url("../img/about/angel-right.png") no-repeat scroll center
+          center;
+        position: absolute;
+        right: 20px;
+        width: 12px;
+        height: 7px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.3s linear;
+        opacity: 0;
+      }
+      &.active,
+      &:hover {
+        color: $black;
+        &:before {
+          right: 0;
+          opacity: 1;
+        }
+      }
+    }
+    &:last-child {
+      border-bottom: 0px;
+    }
+  }
+}
+.country_tab_content {
+  padding-left: 145px;
+}
+.country_list {
+  width: calc(100% / 3);
+  li {
+    a {
+      font-size: 18px;
+      line-height: 34px;
+      color: $black;
+      opacity: 0.5;
+      transition: opacity 0.2s;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.mapBox1 {
+  height: 550px;
+  margin-left: -160px;
+  margin-right: -400px;
+  margin-top: 80px;
+}
+/*======== End contact address area css ========*/
+
+/*======== Start site map area css ========*/
+.site_map_category_list {
+  padding-bottom: 120px;
+  .about_list_widget {
+    margin-bottom: 70px;
+    .f_title {
+      color: $black;
+      font-size: 26px;
+      margin-bottom: 22px;
+    }
+    .list_info {
+      li {
+        margin-bottom: 15px;
+        a {
+          color: rgba(0, 0, 0, 0.5);
+          &:hover {
+            color: $baseColor;
+          }
+        }
+        .list_info {
+          padding-left: 20px;
+          margin-top: 18px;
+          margin-bottom: 18px;
+        }
+      }
+    }
+  }
+}
+.site_map_category_list_two {
+  padding-left: 144px;
+  position: relative;
+  .scrollbar {
+    left: 0;
+    right: auto;
+  }
+}
+/*======== End site map area css ========*/

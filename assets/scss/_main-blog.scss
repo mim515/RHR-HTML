@@ -1,0 +1,46 @@
+.blog-area {
+  padding-top: 230px;
+  .blog-menu {
+    margin-bottom: 75px;
+    a {
+      text-decoration: none;
+      font-family: $gestaR;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.05em;
+      text-transform: capitalize;
+      color: $black;
+      opacity: 0.4;
+      span {
+        margin: 0 7px;
+      }
+    }
+    .current {
+      opacity: 1;
+    }
+  }
+  .blog-title {
+    margin-bottom: 105px;
+    h2 {
+      font-family: $gestaR;
+      font-size: 60px;
+      color: $black;
+      text-transform: capitalize;
+      position: absolute;
+    }
+    p {
+      font-family: $gestaR;
+      font-size: 20px;
+      letter-spacing: 0.02em;
+      color: $black;
+      opacity: 0.5;
+      max-width: 575px;
+      margin-left: auto;
+      line-height: 160%;
+      span {
+        margin-top: 35px;
+        display: inherit;
+      }
+    }
+  }
+}

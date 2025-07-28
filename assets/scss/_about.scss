@@ -1,0 +1,151 @@
+/*=========== about_area css ==========*/
+.about_area {
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+.pt_230 {
+  padding-top: 230px;
+}
+.inner_content_box {
+  max-width: 865px;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+  p {
+    opacity: 0.5;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+  }
+}
+.about_title {
+  h5 {
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 400;
+    padding-left: 58px;
+    padding-top: 14px;
+    letter-spacing: 0.02em;
+  }
+}
+.about_title_head {
+  font-size: 60px;
+  line-height: 60px;
+  padding-left: 55px;
+  font-weight: 400;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    border-top: 35px solid #ef4050;
+    border-left: 35px solid transparent;
+    bottom: -0.15em;
+  }
+  &.arrow_none {
+    padding-left: 0;
+    &:before {
+      display: none;
+    }
+  }
+}
+.about_discription {
+  letter-spacing: 0.02em;
+  padding-left: 283px;
+  padding-top: 60px;
+}
+.about_banner {
+  img {
+    width: 100%;
+    object-fit: cover;
+    max-width: 100%;
+  }
+  .about_img {
+    text-align: right;
+    &.two {
+      max-width: 408px;
+      margin-left: auto;
+    }
+    & + .about_img {
+      margin-top: 30px;
+    }
+  }
+}
+/*=========== about_area css ==========*/
+
+.section_title {
+  margin-bottom: 80px;
+  .title_text {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .about_discription {
+    padding-left: 0;
+    padding-top: 0;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+}
+.title {
+  font-size: 26px;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+/*============ Start mission_area css ===========*/
+.mission_area {
+  padding: 100px 0px;
+  .section_title {
+    margin-bottom: 135px;
+  }
+}
+.mission_gallery {
+  margin-left: -160px;
+  position: relative;
+  .triangle {
+    position: absolute;
+    left: 160px;
+    top: -120px;
+  }
+}
+.gallery_img {
+  & + .gallery_img {
+    margin-top: 25px;
+  }
+}
+.mission_overview_content {
+  h4 {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    margin-bottom: 22px;
+  }
+  p {
+    margin-bottom: 12px;
+  }
+  & + .mission_overview_content {
+    margin-top: 78px;
+  }
+}
+.mission_overview_item {
+  align-items: center;
+  margin-top: 20px;
+  .icon {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+  }
+  p {
+    line-height: 22px;
+    margin-bottom: 0;
+  }
+}
+
+/*============ End mission_area css ===========*/

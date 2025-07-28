@@ -1,0 +1,87 @@
+.counter_area {
+  padding: 120px 0px 220px;
+}
+.counter_item {
+  overflow: hidden;
+  h3 {
+    font-size: 68px;
+    line-height: 1;
+    color: #ef4050;
+    font-weight: 400;
+    font-family: $gestaR;
+    overflow: hidden;
+  }
+  sub {
+    color: $black;
+    font-size: 36px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    padding-left: 42px;
+    right: 0px;
+    position: relative;
+    bottom: 0;
+    float: right;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 0px;
+      width: 0;
+      height: 0;
+      border-top: 29px solid #ef4050;
+      border-left: 29px solid transparent;
+      bottom: -0.15em;
+    }
+  }
+}
+
+.counter_text {
+  max-width: 860px;
+  margin: 175px auto 0;
+  h4 {
+    font-size: 48px;
+    line-height: 67px;
+    letter-spacing: 0.02rem;
+    font-weight: 400;
+    font-family: $gestaR;
+  }
+}
+
+/*========== Start clients_logo_area css ============*/
+.clients_logo_area {
+  background: #202020;
+  padding: 110px 0px 120px;
+  h2 {
+    color: #fff;
+    opacity: 0.3;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: $gestaB;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+}
+.trustedclients {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  .companylogo {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px 15px;
+    width: calc(100% / 5);
+    text-align: center;
+    opacity: 0.3;
+    transition: all 0.2s linear;
+    img {
+      max-width: 100%;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+/*========== End clients_logo_area css ============*/

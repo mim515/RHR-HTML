@@ -1,0 +1,50 @@
+.single-member {
+  padding-top: 230px;
+  .team-sidebar {
+    display: flex;
+    .back {
+      padding-right: 68px;
+      text-transform: capitalize;
+      h4 {
+        font-family: $gestaR;
+        font-size: 14px;
+        line-height: 32px;
+        margin-left: 10px;
+        color: $black;
+      }
+    }
+    .another-container {
+      max-width: 1022px;
+      margin: 0 auto;
+      .whole-description {
+        .member-description {
+          align-self: center;
+          padding-left: 60px;
+          h2 {
+            font-family: $gestaL;
+            font-size: 34px;
+            text-transform: capitalize;
+            letter-spacing: 0.02em;
+            color: $black;
+          }
+          h4 {
+            font-family: $gestaR;
+            font-size: 20px;
+            letter-spacing: 0.02em;
+            color: $black;
+            line-height: 24px;
+            opacity: 0.7;
+            margin: 15px 0 40px 0;
+          }
+          p {
+            font-family: $gestaR;
+            font-size: 20px;
+            opacity: 0.5;
+            letter-spacing: 0.02em;
+            max-width: 490px;
+          }
+        }
+      }
+    }
+  }
+}

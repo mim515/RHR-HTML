@@ -1,0 +1,85 @@
+/*============= team area =============*/
+.team_area {
+  padding: 100px 0px;
+}
+.team_slider {
+  .slick-list {
+    padding-left: 0 !important;
+    margin-left: -30px;
+    margin-right: -46px;
+  }
+  .slider_item {
+    margin: 0px 30px;
+  }
+  .slick-next {
+    right: -100px;
+    width: 30px;
+    height: 20px;
+    top: 48.5%;
+    &::before {
+      content: "";
+      opacity: 1;
+      background: url("../img/about/arrow-right.png") no-repeat scroll center
+        center;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+}
+.team_item {
+  .team_img {
+    img {
+      transition: all 0.2s linear;
+    }
+  }
+  .team_content {
+    text-align: center;
+    padding: 15px 15px 0px;
+    h4 {
+      font-size: 16px;
+      font-weight: 700;
+      font-family: $gestaB;
+      letter-spacing: 00.02em;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 17px;
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+  & + .team_item {
+    margin-top: 42px;
+  }
+}
+/*============= team area =============*/
+
+/*============= career area =============*/
+.career_area {
+  padding: 100px 0px 200px;
+}
+.career_description {
+  h4 {
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 23px;
+  }
+  h2 {
+    font-size: 44px;
+    line-height: 58px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 0;
+  }
+}
+.theme_btn_small {
+  font-size: 18px;
+}
+/*============= career area =============*/

@@ -1,0 +1,65 @@
+/*font Variables*/
+$gestaL: "Gesta-light";
+$gestaM: "Gesta-Medium";
+$gestaR: "Gesta-Regular";
+$gestaB: "Gesta-Bold";
+
+/*Color Variables*/
+$black: #000;
+$baseColor: #ef4050;
+
+/*=================== fonts ====================*/
+
+@font-face {
+  font-family: "Gesta-light";
+  font-weight: 300;
+  src: url("../font/1697.woff");
+}
+@font-face {
+  font-family: "Gesta-Medium";
+  font-weight: 500;
+  src: url("../font/1701.woff");
+}
+@font-face {
+  font-family: "Gesta-Regular";
+  font-weight: 400;
+  src: url("../font/1699.woff");
+}
+@font-face {
+  font-family: "Gesta-Bold";
+  font-weight: 700;
+  src: url("../font/1703.woff");
+}
+
+// Mixins
+@mixin transition(
+  $property: all,
+  $duration: 300ms,
+  $animate: linear,
+  $delay: 0s
+) {
+  transition: $property $duration $animate $delay;
+}
+
+// Placeholder Mixins
+
+@mixin placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+.col-md-offset-right-1,
+.col-lg-offset-right-1 {
+  margin-right: 8.33333333%;
+}
+// Font family link

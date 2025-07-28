@@ -1,0 +1,61 @@
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+body {
+  line-height: 30px;
+  font-size: 20px;
+  height: 100%;
+  color: $black;
+  font-family: $gestaR;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+:focus {
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 1200px) {
+  .custom_container {
+    max-width: 1199px;
+  }
+}
+
+.container {
+  @media (min-width: 1367px) {
+    max-width: 1380px;
+  }
+}
+
+.body_wrapper {
+  overflow: hidden;
+}
+
+.custom_pad {
+  padding-left: 105px;
+  padding-right: 105px;
+}
